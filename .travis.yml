@@ -7,3 +7,17 @@ before_install:
 
 script:
  - docker myimage npm run test -- --coverage
+
+deploy:
+ provider: elasticbeanstalk
+ region: "ap-south-1"
+ app: "Docker"
+ env: "Docker-env"
+ bucket_name: "https://s3.console.aws.amazon.com/s3/buckets/elasticbeanstalk-ap-south-1-134448675281/?region=ap-south-1&tab=overview"
+ bucke_path: "Docker"
+ 
+ on:
+   branch: master
+ access_key_id: $AWS_ACCESS_KEY
+ scret_access_key:
+  sccure: "$AWS_SECRET_KEY"

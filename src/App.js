@@ -17,7 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn Reacti
- <p1>My try</p1>
+ <P1>My try</P1>
 <h1>How are you doing today..</h1>
 <h2>lests try with docker</h2>        </a>
 <p2>last with compose  iwndows more time</p2>      </header>
